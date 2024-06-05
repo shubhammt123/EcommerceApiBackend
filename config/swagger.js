@@ -13,6 +13,10 @@ const options = {
                 url: 'http://localhost:3000',
                 description: 'Development server',
             },
+            {
+                url: 'https://ecommerce-api-backend.vercel.app',
+                description: 'Development server',
+            }
         ],
     },
     // Paths to files containing OpenAPI definitions
