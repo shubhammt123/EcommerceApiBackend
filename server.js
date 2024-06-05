@@ -15,7 +15,9 @@ const cartRoutes = require('./routes/cart');
 const app = express();
 app.use(express.json());
 require('dotenv').config();
-
+app.get('/',(req,res)=>{
+  res.send("Ecommerce Backend")
+})
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.use('/product',productRoutes);
 app.use('/collection',collectionRoutes);
