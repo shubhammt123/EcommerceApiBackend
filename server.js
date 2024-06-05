@@ -29,7 +29,9 @@ app.use('/review',reviewRoutes);
 app.use('/user',userRoutes);
 app.use('/carts',cartRoutes);
 
-mongoose.connect(process.env.MONGODB_URI, {
+const MONGO_URI = "mongodb+srv://shubhammt123:hp5FLPe1BXPBMs3D@mymongodb.jy0ll84.mongodb.net/?retryWrites=true&w=majority&appName=myMongoDb";
+
+mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
