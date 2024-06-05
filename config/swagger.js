@@ -15,7 +15,7 @@ const options = {
             },
             {
                 url: 'https://ecommerce-api-backend.vercel.app',
-                description: 'Development server',
+                description: 'Production server',
             }
         ],
     },
